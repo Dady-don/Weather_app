@@ -71,13 +71,8 @@ function App() {
       })
       .catch((err) => console.log(err));
   };
-  // console.log(weather);
-  // console.log(forecast);
-  console.log(bg);
 
-  // const imageUrl=`./Images/${bg}.jpg`;
-  // console.log(imageUrl)
-  // style={{background:`url(${imageUrl})`}}
+  // console.log(bg);
 
   return (
     <>

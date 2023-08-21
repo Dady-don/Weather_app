@@ -5,24 +5,20 @@
   width: 100%;
   margin:  auto;
   height: 100%;
-  /* width: 100%; */
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  /* background-image: url(./Images/clear\ sky.jpg); */
- 
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   box-shadow: 10px -2px 20px 2px rgb(0 0 0/ 30%);
-/* border-radius: 10px; */
+
 
 }
 
 .main{
-  /* border: 2px solid white; */
-  /* margin-top: 20px; */
+ 
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -30,8 +26,7 @@
   width: 75%;
   margin-bottom: 50px;
   backdrop-filter: blur(4px);
-  /* box-shadow: 10px -2px 20px 2px rgb(0 0 0/ 30%); */
-  /* background-color: rgba(124, 160, 180, 0.3); */
+ 
 
 }
 .title_bottom{
@@ -45,14 +40,14 @@
 
 .weather{
   width: 75%;
-  /* border: 2px solid white; */
+ 
   border-radius: 10px;
   box-shadow: 10px -2px 20px 2px rgb(0 0 0/ 30%);
   color: black;
-  /* background-color: #333; */
+ 
   margin: 20px auto 0px auto;
   backdrop-filter: blur(4px);
-  /* background-image: url(./Images/haze.jpg); */
+ 
 }
 
 
@@ -129,16 +124,11 @@
   width: 100%;
   padding-left: 20px;
   opacity: 10;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center; */
-  /* border: 2px solid white; */
 }
 
 .parameter_row{
   display: flex;
   justify-content: space-around;
-  /* font-weight: 600;   */
   margin: 0px 30px;
   padding: 2px;
 }
@@ -150,7 +140,7 @@
   align-items: flex-start;
   font-weight: 600;
   font-size: 15px;
-  /* border: 2px solid white; */
+ 
 }
 
 .value{
@@ -201,7 +191,6 @@
   opacity: 10;
   
 
-  /* margin-top: 50px; */
 }
 .dailyItem:hover{
   transform: scale(1.08);
