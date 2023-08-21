@@ -4,21 +4,12 @@ import { useState, useEffect } from "react";
 import { WEATHER_API_URL, WEATHER_API_KEY } from "./Api";
 import Search from "./Components/Search";
 import Forecast from "./Components/Forecast";
-// import haze from "./Images/haze.jpg";
-// import scattered from './Images/scattered clouds.jpg'
-// import clear from './Images/clear sky.jpg'
-// import overcast from './Images/overcast clouds.jpg'
-// import few from './Images/few clouds.jpg'
-// import broken from './Images/broken clouds.jpg'
-// import bg1 from './Images/bg1.jpg'
-
-
-
+import { bgToComponent } from "./Components/Images";
 
 function App() {
   const [weather, setWeather] = useState(null);
   const [forecast, setForecast] = useState(null);
-  const [bg, setBg] = useState('scattered clouds');
+  const [bg, setBg] = useState("scattered clouds");
 
   useEffect(() => {
     if (navigator.geolocation) {
@@ -83,16 +74,20 @@ function App() {
   // console.log(weather);
   // console.log(forecast);
   console.log(bg);
-  
+
   // const imageUrl=`./Images/${bg}.jpg`;
   // console.log(imageUrl)
-// style={{background:`url(${imageUrl})`}} 
- 
+  // style={{background:`url(${imageUrl})`}}
+
   return (
     <>
       <div
-        className="app" 
-        >
+        className="app"
+        style={{
+          backgroundImage:
+            `url('${bgToComponent[bg]}')` ||
+            `url(../Images/scattered clouds.jpg)`,
+        }}>
         <Search onSearchChange={handleSearchChange} />
         <CurrentLocation data={weather} />
         <Forecast data={forecast} />

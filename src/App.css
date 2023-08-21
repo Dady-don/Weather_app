@@ -10,8 +10,8 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  background-image: url(./Images/clear\ sky.jpg);
-  /* backdrop-filter: blur(4px); */
+  /* background-image: url(./Images/clear\ sky.jpg); */
+ 
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
