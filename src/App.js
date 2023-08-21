@@ -86,7 +86,7 @@ function App() {
         style={{
           backgroundImage:
             `url('${bgToComponent[bg]}')` ||
-            `url(../Images/scattered clouds.jpg)`,
+            `url('../Images/scattered clouds.jpg')`,
         }}>
         <Search onSearchChange={handleSearchChange} />
         <CurrentLocation data={weather} />
