@@ -5,6 +5,7 @@ import { WEATHER_API_URL, WEATHER_API_KEY } from "./Api";
 import Search from "./Components/Search";
 import Forecast from "./Components/Forecast";
 import { bgToComponent } from "./Components/Images";
+import scattered from "./Images/scattered clouds.jpg";
 
 function App() {
   const [weather, setWeather] = useState(null);
@@ -80,8 +81,7 @@ function App() {
         className="app"
         style={{
           backgroundImage:
-            `url('${bgToComponent[bg]}')` ||
-            `url('../Images/scattered clouds.jpg')`,
+            `url('${bgToComponent[bg]}')` || `url(../Images/${scattered}.jpg)`,
         }}>
         <Search onSearchChange={handleSearchChange} />
         <CurrentLocation data={weather} />

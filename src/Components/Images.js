@@ -7,6 +7,8 @@ import overcast_clouds from "../Images/overcast clouds.jpg";
 import scattered_clouds from "../Images/scattered clouds.jpg";
 import light_rain from "../Images/light rain.avif";
 import thunder_storm_with_light_rain from "../Images/thunderstorm with light rain.avif";
+import smoke from "../Images/smoke.avif";
+import moderate_rain from "../Images/moderate rain.avif";
 
 const bg = {
   BROKEN_CLOUDS: "broken clouds",
@@ -18,6 +20,8 @@ const bg = {
   SCATTERED_CLOUDS: "scattered clouds",
   LIGHT_RAIN: "light rain",
   THUNDERSTORM_WITH_LIGHT_RAIN: "thunderstorm with light rain",
+  SMOKE: "smoke",
+  MODERATE_RAIN: "moderate rain",
 };
 
 export const bgToComponent = {
@@ -30,4 +34,6 @@ export const bgToComponent = {
   [bg.SCATTERED_CLOUDS]: scattered_clouds,
   [bg.LIGHT_RAIN]: light_rain,
   [bg.THUNDERSTORM_WITH_LIGHT_RAIN]: thunder_storm_with_light_rain,
+  [bg.SMOKE]: smoke,
+  [bg.MODERATE_RAIN]: moderate_rain,
 };
